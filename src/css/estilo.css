@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.descricao, .lista-preparo, .lista-ingredientes, .lista-instrucoes, .itens, .descricao-nutricao{
+    font-family: 'Outfit', sans-serif;
+    color: hsl(30, 10%, 34%);
+}
+
+.titulo, .preparo-titulo, .ingredientes-titulo, .instrucoes-titulo, .nutricao-titulo{
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    
+}
+
+.preparo-titulo, .ingredientes-titulo, .instrucoes-titulo, .nutricao-titulo{
+    color: hsl(14, 45%, 36%);
+    font-size: 30px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1900px;
+    width: 700px;
+    margin: 100px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.container .pagina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 95%;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.container .pagina img{
+    width: 600px;
+    height: 300px;
+    border-radius: 12px;
+    margin-bottom:100px;
+}
+
+.container .pagina .titulo{
+    font-size: 40px;
+    margin-top: -70px;
+    width: 100%;
+    
+}
+
+.container .pagina .descricao{
+    margin: 20px 0px 30px 0px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.container .pagina .preparo{
+    width: 100%;
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .pagina .preparo-titulo{
+    padding: 10px;
+    color: hsl(332, 51%, 32%);
+    /* border-radius: 10px;
+    border: 2px solid; */
+}
+
+.container .pagina .lista-preparo{
+    padding-left: 40px;
+}
+
+.container .pagina .lista-preparo li {
+    padding: 5px;
+}
+
+.container .pagina .lista-preparo li::marker{
+    color: hsl(332, 51%, 32%);
+    font-size: 11px;
+}
+
+hr{
+    color: black;
+}
+
+.container .pagina .ingredientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0px;
+    flex-direction: column;
+}
+
+.container .pagina .ingredientes .ingredientes-titulo{
+    width: 100%;
+}
+
+.container .pagina .ingredientes .lista-ingredientes{
+    margin-top: 10px;
+    margin-right: 60px;
+    padding: 10px;
+}
+
+.container .pagina .ingredientes .lista-ingredientes li{
+    padding: 5px 15px;
+}
+
+.container .pagina .lista-ingredientes li::marker{
+    color: hsl(332, 51%, 32%);
+    font-size: 11px;
+}
+
+
+.container .pagina .linha-ingrediente{
+    margin-bottom: 30px;
+    background-color: hsl(30, 18%, 87%);
+    height: 1px;
+    width: 100%;
+    border: 0px;
+    
+}
+
+.container .pagina .Instrucoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container .pagina .Instrucoes .instrucoes-titulo{
+    width: 100%;
+}
+
+.container .pagina .Instrucoes .lista-instrucoes{
+    margin: 10px;
+    padding: 10px;
+}
+
+.container .pagina .Instrucoes .lista-instrucoes li{
+    padding: 5px 15px;
+    line-height: 25px;
+}
+
+.container .pagina .Instrucoes .lista-instrucoes li::marker{
+    color: hsl(332, 51%, 32%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.container .pagina .linha-instrucoes{
+    margin-bottom: 0px;
+    background-color: hsl(30, 18%, 87%);
+    height: 2px;
+    width: 100%;
+    border: 0px;
+    margin-bottom: 20px;
+    
+}
+
+.container .pagina .nutricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.container .pagina .nutricao-titulo{
+    width: 100%;
+}
+
+.container .pagina .descricao-nutricao{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.container .pagina .calorias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.container .pagina .calorias .qtd-calorias{
+    width: 50%;
+}
+
+.container .pagina .carboidratos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.container .pagina .carboidratos .qtd-carboidratos{
+    width: 50%;
+}
+
+.container .pagina .proteina{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.container .pagina .proteina .qtd-proteina{
+    width: 50%;
+}
+
+.container .pagina .gordura{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -5px;
+}
+
+.container .pagina .gordura .qtd-gordura{
+    width: 50%;
+}
+
+.container .pagina .linha-nutricao{
+    margin-bottom: 0px;
+    background-color: hsl(30, 18%, 87%);
+    height: 2px;
+    width: 100%;
+    border: 0px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.container .pagina .nutricao .valores{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+
